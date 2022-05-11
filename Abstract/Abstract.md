@@ -1,5 +1,3 @@
-# Annual-Session-2022
-Project for the oral presentation at the Faculty of Physics's Annual Meeting.
+# New Results Concerning Collective Phenomena in Triaxial Nuclei
 
-🗓 24th of June, 2022  
-🔗 [website](https://www.fizica.unibuc.ro/SSFFB/Main.php)
+Wobbling motion is studied for a simple rotor and a quasi-particle coupled to a triaxial rotor. For the first case, the initial Hamiltonian is treated within the Harmonic Approximation, and the obtained analytical results are applied to the even-even nucleus ${130}$Ba. The excitation energies, quadrupole moments and also transition probabilities are evaluated and compared with the experimental data. In the second case, a quasi-particle + triaxial rotor (QTR) Hamiltonian is adopted, and a set of semi-classical equations of the wobbling spectrum is determined analytically. This theoretical formalism is applied to the $^{163}$Lu. By using the concepts of Signature Partner Bands and Parity Partner Bands, the four known triaxial strongly-deformed (TSD) bands in this nucleus are interpreted as zero-wobbling phonon for TSD1, TSD2, and TSD4, while TSD3 is a one-wobbling phonon band. The results concerning excitation energies for each band are shown in comparison with the experimental data. Moreover, if one finds the intersection curves between the energy surface (i.e., the triaxial ellipsoid) and the angular momentum sphere, then the classical trajectory of any state from the isotope can be calculated. Such geometrical representations are made and also applied to $^{163}$Lu.
