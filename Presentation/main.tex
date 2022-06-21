@@ -11,6 +11,7 @@
 \usepackage{amsmath}
 \usepackage{xcolor}
 \usepackage{physics}
+\usepackage{fontawesome}
 
 
 \title[Wobbling Motion]{New Results Concerning Collective Motion in Triaxial Nuclei}
@@ -100,11 +101,12 @@
       \begin{itemize}
         \item A nucleus - \emph{droplet} - can generate angular momentum from the rotation and vibration of the droplet itself
         \item Each individual nucleon contributes to the total angular momentum $\rightarrow$ \emph{collectiveness}
+        \item \faWarning Rotation can occur only if the nuclear potential is \emph{deformed}
       \end{itemize}
     \end{block}
     \begin{figure}
       \centering
-      \includegraphics[scale=0.26]{Figs/collective-rotation.pdf}
+      \includegraphics[scale=0.22]{Figs/collective-rotation.pdf}
     \end{figure}
 \end{frame}
 
@@ -117,9 +119,10 @@
   \end{itemize}
   \begin{figure}
     \centering
-    \includegraphics[scale=0.1]{Figs/collective-spectra.pdf}
-    \includegraphics[scale=0.115]{Figs/collective-levels.pdf}
+    \includegraphics[scale=0.09]{Figs/collective-spectra.pdf}
+    \includegraphics[scale=0.1]{Figs/collective-levels.pdf}
   \end{figure}
+  \tiny{\textit{Figures from Ødegård et al., 2001}}
 \end{frame}
 
 \begin{frame}
@@ -135,6 +138,79 @@
     \includegraphics[scale=0.4]{Figs/precessional_cone_2.pdf}
     \includegraphics[scale=0.35]{Figs/wobbling_n_schematic-2.pdf}
   \end{figure}
+\end{frame}
+
+\begin{frame}
+  \frametitle{Wobbling Spectrum}
+\begin{block}{Even-$A$ Nuclei}
+  \begin{itemize}
+    \item Employing the Harmonic Approximation \textit{(Bohr, 1969)}
+    \item $\hat{H}$ composed of a {\color{red}\emph{rotational}} part and {\color{blue}\emph{harmonic oscillation}} (i.e., wobbling) part:
+  \end{itemize}
+  \begin{align}
+    \hat{H}={\color{red}\frac{\hbar^2}{2\mathcal{J}_\text{max}}I(I+1)}+{\color{blue}\hbar\omega_\text{wob}\left(n_w+\frac{1}{2}\right)}\ , n=0,1,2,\dots
+    \label{wobbling-hamiltonian-even-A}
+  \end{align}
+\end{block}
+\begin{figure}
+  \includegraphics[scale=0.4]{Figs/wobbling_n_schematic-1.pdf}
+  \includegraphics[scale=0.35]{Figs/wobblingFreq-evenA.pdf}
+\end{figure}
+\end{frame}
+
+\begin{frame}
+  \frametitle{New Results for A=130}
+  \begin{minipage}{.8\textwidth}
+    \begin{block}{Recent findings for even-even nuclei}
+      \begin{itemize}
+        \item Two wobbling bands have been identified experimentally in $^{130}$Ba (\textit{Petrache et al., 2019})
+        \item DFT+PRM description of the wobbling motion described the excited spectra (\textit{Chen et al, 2019})
+        \item Stable triaxiality for $\beta=0.24$ and $\gamma=21.5^\circ$
+        \item Infer spin-dependence for $\mathcal{J}_{1,2,3}$
+      \end{itemize}
+    \end{block}
+    \begin{alertblock}{Harmonic Approximation}
+      \begin{itemize}
+        \item Employed an energy spectrum of harmonic type as Eq. \ref{wobbling-hamiltonian-even-A}
+        \item Reproduced the excited spectra $\{B1,B2\}$
+      \end{itemize}
+    \end{alertblock}
+  \end{minipage}%
+  \begin{minipage}{.2\textwidth}
+    \begin{figure}
+      \centering
+      \includegraphics[scale=0.13]{Figs/ba-130-level-scheme.pdf}
+      \tiny{\textit{Figure from Petrache et al., 2019}}
+    \end{figure}
+  \end{minipage}
+\end{frame}
+
+\begin{frame}
+  \frametitle{New Results for A=130 II}
+  \begin{columns}
+    \begin{column}{0.8\textwidth}
+      \begin{alertblock}{Harmonic Approximation}
+        \begin{itemize}
+          \item Employed an energy spectrum of harmonic type according to Eq. \ref{wobbling-hamiltonian-even-A}:
+          \begin{align}
+            E_{I,n_w}=\frac{\hbar^2}{2\mathcal{J}_3}I(I+1)+\hbar\omega_\text{wob}(n_w+\frac{1}{2})
+          \end{align}
+          \item wobbling frequency is a function of the three MOI (fixed ordering $\mathcal{J}_3>\mathcal{J}_{1,2}$)
+          \begin{align}
+            \hbar\omega_\text{wob}=2I\times f(\mathcal{J}_1,\mathcal{J}_2,\mathcal{J}_3)
+          \end{align}
+        \end{itemize}
+      \end{alertblock}
+  \end{column}
+  \begin{column}{0.2\textwidth}
+    \begin{figure}
+      \centering
+      \includegraphics[scale=0.13]{Figs/ba-130-level-scheme.pdf}
+      \tiny{\textit{Figure from Petrache et al., 2019}}
+    \end{figure}
+  \end{column}
+  \end{columns}
+
 \end{frame}
 
 \begin{frame}
