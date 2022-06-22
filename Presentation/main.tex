@@ -12,6 +12,8 @@
 \usepackage{xcolor}
 \usepackage{physics}
 \usepackage{fontawesome}
+\usepackage{mathrsfs}  
+\usepackage{multirow}
 
 
 \title[Wobbling Motion]{New Results Concerning Collective Motion in Triaxial Nuclei}
@@ -163,18 +165,12 @@
   \begin{minipage}{.8\textwidth}
     \begin{block}{Recent findings for even-even nuclei}
       \begin{itemize}
-        \item Two wobbling bands have been identified experimentally in $^{130}$Ba (\textit{Petrache et al., 2019})
-        \item DFT+PRM description of the wobbling motion described the excited spectra (\textit{Chen et al, 2019})
+        \item Two wobbling bands have been identified experimentally in \textbf{$^\mathbf{130}$Ba} (\textit{Petrache et al., 2019})
+        \item DFT+PRM description of the wobbling motion described the excited spectra (\textit{Chen et al., 2019})
         \item Stable triaxiality for $\beta=0.24$ and $\gamma=21.5^\circ$
         \item Infer spin-dependence for $\mathcal{J}_{1,2,3}$
       \end{itemize}
     \end{block}
-    \begin{alertblock}{Harmonic Approximation}
-      \begin{itemize}
-        \item Employed an energy spectrum of harmonic type as Eq. \ref{wobbling-hamiltonian-even-A}
-        \item Reproduced the excited spectra $\{B1,B2\}$
-      \end{itemize}
-    \end{alertblock}
   \end{minipage}%
   \begin{minipage}{.2\textwidth}
     \begin{figure}
@@ -193,11 +189,11 @@
         \begin{itemize}
           \item Employed an energy spectrum of harmonic type according to Eq. \ref{wobbling-hamiltonian-even-A}:
           \begin{align}
-            E_{I,n_w}=\frac{\hbar^2}{2\mathcal{J}_3}I(I+1)+\hbar\omega_\text{wob}(n_w+\frac{1}{2})
+            E_{I,n_w}={\color{red}\frac{\hbar^2}{2\mathcal{J}_3}I(I+1)}+{\color{blue}\hbar\omega_\text{wob}(n_w+\frac{1}{2})}
           \end{align}
-          \item wobbling frequency is a function of the three MOI (fixed ordering $\mathcal{J}_3>\mathcal{J}_{1,2}$)
+          \item wobbling frequency - linear dependence on $I$ (fixed MOI ordering $\mathcal{J}_3>\mathcal{J}_{1,2}$)
           \begin{align}
-            \hbar\omega_\text{wob}=2I\times f(\mathcal{J}_1,\mathcal{J}_2,\mathcal{J}_3)
+            {\color{blue}\hbar\omega_\text{wob}(I)=2f(\mathcal{J}_1,\mathcal{J}_2,\mathcal{J}_3)\cdot I}
           \end{align}
         \end{itemize}
       \end{alertblock}
@@ -210,7 +206,91 @@
     \end{figure}
   \end{column}
   \end{columns}
+\end{frame}
 
+\begin{frame}
+  \frametitle{New Results for A=130 III}
+  \begin{columns}
+    \begin{column}{0.75\textwidth}
+      \begin{alertblock}{Harmonic Approximation}
+        \begin{itemize}
+          \item Reproduced the excited spectra for $\{B1,B2\}$
+          \item Fix a \emph{free parameter set}: $\mathcal{P}=\left[\mathcal{J}_1,\mathcal{J}_2,\mathcal{J}_3\right]$
+          \item Adopt a fitting procedure:
+          \begin{align}
+            \chi^2=\frac{1}{N_T}\sum_{i=1}^{N_T}\frac{\left(E_\text{exp}^{(i)}-E_\text{th}^{(i)}\right)}{E_\text{exp}^{(i)}}
+          \end{align}
+          % \item $\texttt{min}\left[\chi^2\right]\longrightarrow\mathcal{P}_\text{fit}$.
+        \end{itemize}
+      \end{alertblock}
+      \begin{exampleblock}{Results for $^{130}$Ba \textbf{PRELIMINARY!}}
+        \begin{table}
+          \centering
+          \begin{tabular}{|c|c|c|c|}
+          \hline
+          $\mathcal{J}_1^\text{fit}$ & $\mathcal{J}_2^\text{fit}$ & $\mathcal{J}_3^\text{fit}$ & \multirow{2}{*}{$\left[\hbar^2\text{MeV}^{-1}\right]$} \\ \cline{1-3}
+          27                         & 22                         & 43                         &                                                       \\ \hline
+          \end{tabular}
+          \end{table}
+      \end{exampleblock}
+  \end{column}
+  \begin{column}{0.25\textwidth}
+    \begin{figure}
+      \centering
+      \includegraphics[scale=0.285]{Figs/ba130-band1.pdf}
+      \includegraphics[scale=0.285]{Figs/ba130-band2.pdf}
+      \tiny{\emph{Poenaru, 2022, unpublished}}
+    \end{figure}
+  \end{column}
+\end{columns}
+\end{frame}
+
+\begin{frame}
+  \frametitle{New Results for A=130 IV}
+  \begin{itemize}
+    \item \textbf{Left:} Wobbling energy* $E_\text{wob}(I)=E_\text{B2}(I)-E_\text{B1}(I)$
+    \item \textbf{Center:} Rotational frequency $\hbar\omega_\text{rot}$ - collective
+    \item \textbf{Right:} Interband transition probabilities $I_\text{B2}\to I_\text{B1}$
+  \end{itemize}
+  \begin{figure}
+    \centering
+    \includegraphics[scale=0.4]{Figs/ba130-wobbling-energies-edited.pdf}
+    \includegraphics[scale=0.36]{Figs/ba130-rotational-frequencies.pdf}
+    \includegraphics[scale=0.4]{Figs/ba130-EM.pdf}
+    \tiny{\emph{Poenaru, 2022, unpublished}}
+  \end{figure}
+\end{frame}
+
+\begin{frame}
+  \frametitle{Electromagnetic transitions}
+  \begin{columns}
+    \begin{column}{0.75\textwidth}
+  \begin{itemize}
+    \item Deformation parameters $\beta=0.24$ and $\gamma=21.5^\circ$ were adopted for \emph{quadrupole moments} and \emph{transition probabilities}
+    \item \par PRM values are calculated by Chen et al.
+  \end{itemize}
+\end{column}
+\begin{column}{0.25\textwidth}
+  \begin{table}
+    \centering
+    \resizebox{\textwidth}{!}{%
+    \begin{tabular}{|c|ccc|}
+      \hline
+      \multirow{2}{*}{$I$} & \multicolumn{3}{c|}{$B(E2)_\text{out}/B(E2)_\text{in}$}                          \\ \cline{2-4} 
+      & \multicolumn{1}{c|}{Th.} & \multicolumn{1}{c|}{PRM*} & Exp. \\ \hline
+      11                   & \multicolumn{1}{c|}{0.37}       & \multicolumn{1}{c|}{-}           & -             \\ \hline
+      13                   & \multicolumn{1}{c|}{0.32}       & \multicolumn{1}{c|}{0.51}       & 0.32         \\ \hline
+      15                   & \multicolumn{1}{c|}{0.27}       & \multicolumn{1}{c|}{0.42}       & 0.36         \\ \hline
+      17                   & \multicolumn{1}{c|}{0.24}       & \multicolumn{1}{c|}{0.35}       & 0.22         \\ \hline
+      19                   & \multicolumn{1}{c|}{0.21}       & \multicolumn{1}{c|}{0.29}       & 0.22         \\ \hline
+      21                   & \multicolumn{1}{c|}{0.19}       & \multicolumn{1}{c|}{0.25}       & 0.41         \\ \hline
+      23                   & \multicolumn{1}{c|}{0.18}       & \multicolumn{1}{c|}{-}           &  -            \\ \hline
+      25                   & \multicolumn{1}{c|}{0.16}       & \multicolumn{1}{c|}{-}           &  -            \\ \hline
+    \end{tabular}%
+    }
+  \end{table}
+\end{column}
+\end{columns}
 \end{frame}
 
 \begin{frame}
