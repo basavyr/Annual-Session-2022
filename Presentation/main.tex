@@ -14,8 +14,8 @@
 \usepackage{fontawesome}
 \usepackage{mathrsfs}  
 \usepackage{multirow}
-
 % \usefonttheme{professionalfonts}
+
 
 \title[Wobbling Motion]{New Results Concerning Collective Motion in Triaxial Nuclei}
 \author[Robert POENARU]{Robert POENARU\inst{1,2}}
@@ -48,12 +48,11 @@
 \begin{document}
 %---------------------------------------------------------
 \frame{\titlepage}
-\begin{frame}
-  \frametitle{Table of Contents}
-  \tableofcontents
-\end{frame}
+% \begin{frame}
+%   \frametitle{Table of Contents}
+%   \tableofcontents
+% \end{frame}
 
-\section{Nuclear Shapes}
 \begin{frame}{Nuclear Deformation}
 \par Most of the nuclei are either \emph{spherical} or \emph{axially symmetric} in their ground-state.
 \par Deformation parameter $\beta$ (\textit{Bohr, 1969}): preserves axial symmetry
@@ -98,20 +97,20 @@
   \end{block}
 \end{frame}
 
-\begin{frame}
-  \frametitle{Energy of Deformed Nuclei}
-    \begin{block}{Collective Motion}
-      \begin{itemize}
-        \item A nucleus - \emph{droplet} - can generate angular momentum from the rotation and vibration of the droplet itself
-        \item Each individual nucleon contributes to the total angular momentum $\rightarrow$ \emph{collectiveness}
-        \item \faWarning Rotation can occur only if the nuclear potential is \emph{deformed}
-      \end{itemize}
-    \end{block}
-    \begin{figure}
-      \centering
-      \includegraphics[scale=0.22]{Figs/collective-rotation.pdf}
-    \end{figure}
-\end{frame}
+% \begin{frame}
+%   \frametitle{Energy of Deformed Nuclei}
+%     \begin{block}{Collective Motion}
+%       \begin{itemize}
+%         \item A nucleus - \emph{droplet} - can generate angular momentum from the rotation and vibration of the droplet itself
+%         \item Each individual nucleon contributes to the total angular momentum $\rightarrow$ \emph{collectiveness}
+%         \item \faWarning Rotation can occur only if the nuclear potential is \emph{deformed}
+%       \end{itemize}
+%     \end{block}
+%     \begin{figure}
+%       \centering
+%       \includegraphics[scale=0.2]{Figs/collective-rotation.pdf}
+%     \end{figure}
+% \end{frame}
 
 \begin{frame}
   \frametitle{Triaxial Rotor Energy}
@@ -122,8 +121,8 @@
   \end{itemize}
   \begin{figure}
     \centering
-    \includegraphics[scale=0.09]{Figs/collective-spectra.pdf}
-    \includegraphics[scale=0.1]{Figs/collective-levels.pdf}
+    \includegraphics[scale=0.1]{Figs/collective-spectra.pdf}
+    \includegraphics[scale=0.11]{Figs/collective-levels.pdf}
   \end{figure}
   \tiny{\textit{Figures from Ødegård et al., 2001}}
 \end{frame}
@@ -138,8 +137,8 @@
 \end{itemize}
   \begin{figure}
     \centering
-    \includegraphics[scale=0.4]{Figs/precessional_cone_2.pdf}
-    \includegraphics[scale=0.35]{Figs/wobbling_n_schematic-2.pdf}
+    \includegraphics[scale=0.42]{Figs/precessional_cone_2.pdf}
+    \includegraphics[scale=0.37]{Figs/wobbling_n_schematic-2.pdf}
   \end{figure}
 \end{frame}
 
@@ -156,8 +155,8 @@
   \end{align}
 \end{block}
 \begin{figure}
-  \includegraphics[scale=0.4]{Figs/wobbling_n_schematic-1.pdf}
-  \includegraphics[scale=0.35]{Figs/wobblingFreq-evenA.pdf}
+  \includegraphics[scale=0.5]{Figs/wobbling_n_schematic-1.pdf}
+  \includegraphics[scale=0.4]{Figs/wobblingFreq-evenA.pdf}
 \end{figure}
 \end{frame}
 
@@ -169,7 +168,7 @@
         \item Two wobbling bands have been identified experimentally in \textbf{$^\mathbf{130}$Ba} (\textit{Petrache et al., 2019})
         \item DFT+PRM description of the wobbling motion described the excited spectra (\textit{Chen et al., 2019})
         \item Stable triaxiality for $\beta=0.24$ and $\gamma=21.5^\circ$
-        \item Infer spin-dependence for $\mathcal{J}_{1,2,3}$
+        % \item Infer spin-dependence for $\mathcal{J}_{1,2,3}$
       \end{itemize}
     \end{block}
   \end{minipage}%
@@ -184,8 +183,6 @@
 
 \begin{frame}
   \frametitle{New Results for A=130 II}
-  \begin{columns}
-    \begin{column}{0.8\textwidth}
       \begin{alertblock}{Harmonic Approximation}
         \begin{itemize}
           \item Employed an energy spectrum of harmonic type according to Eq. \ref{wobbling-hamiltonian-even-A}:
@@ -198,15 +195,6 @@
           \end{align}
         \end{itemize}
       \end{alertblock}
-  \end{column}
-  \begin{column}{0.2\textwidth}
-    \begin{figure}
-      \centering
-      \includegraphics[scale=0.13]{Figs/ba-130-level-scheme.pdf}
-      \tiny{\textit{Figure from Petrache et al., 2019}}
-    \end{figure}
-  \end{column}
-  \end{columns}
 \end{frame}
 
 \begin{frame}
@@ -219,7 +207,7 @@
           \item Fix a \emph{free parameter set}: $\mathcal{P}=\left[\mathcal{J}_1,\mathcal{J}_2,\mathcal{J}_3\right]$
           \item Adopt a fitting procedure:
           \begin{align}
-            \chi^2=\frac{1}{N_T}\sum_{i=1}^{N_T}\frac{\left(E_\text{exp}^{(i)}-E_\text{th}^{(i)}\right)}{E_\text{exp}^{(i)}}
+            \chi^2=\frac{1}{N_T}\sum_{i=1}^{N_T}\frac{\left(E_\text{exp}^{(i)}-E_\text{th}^{(i)}\right)^2}{E_\text{exp}^{(i)}}
           \end{align}
           % \item $\texttt{min}\left[\chi^2\right]\longrightarrow\mathcal{P}_\text{fit}$.
         \end{itemize}
@@ -238,8 +226,8 @@
   \begin{column}{0.25\textwidth}
     \begin{figure}
       \centering
-      \includegraphics[scale=0.285]{Figs/ba130-band1.pdf}
-      \includegraphics[scale=0.285]{Figs/ba130-band2.pdf}
+      \includegraphics[scale=0.3]{Figs/ba130-band1.pdf}
+      \includegraphics[scale=0.3]{Figs/ba130-band2.pdf}
       \tiny{\emph{Poenaru, 2022, unpublished}}
     \end{figure}
   \end{column}
@@ -268,7 +256,7 @@
     \begin{column}{0.72\textwidth}
       \begin{block}{Even-$A$ nuclei conclusions}
         \begin{itemize}
-          \item Deformation parameters $\beta=0.24$ and $\gamma=21.5^\circ$ were adopted for \emph{quadrupole moments} and \emph{transition probabilities}
+          \item $\beta=0.24$ and $\gamma=21.5^\circ$ were adopted for \emph{quadrupole moments} and \emph{transition probabilities}
           \item \par PRM values are calculated by Chen et al through a similar approach of minimizing the $\chi^2$-function
           \item Main rotation occurs along $3$-axis
           \item Approximation only reproduces $E_\text{wob}$ in the high-spin limit
@@ -301,10 +289,10 @@
 
 \begin{frame}
   \frametitle{Wobbling Motion in Odd-Mass Nuclei}
-  \begin{block}{Wobbling mechanism in odd-$A$ nuclei}
+  \begin{block}{Particle-Rotor-Model}
     \begin{itemize}
       \item The precessional motion of $\mathbf{I}$ is caused by the coupling of an \emph{even-even triaxial core} + \emph{odd-particle}
-      \item The odd nucleon drives the system to large deformations ($\gamma$) and it stabilizes the shape
+      % \item The odd nucleon drives the system to large deformations ($\gamma$) and it stabilizes the shape
       \item System: {\color{red}[even-even core]} + {\color{blue}[odd quasi-particle moving in a quadrupole deformed mean-field generated by the core]}
     \end{itemize}
   \end{block}
@@ -313,7 +301,8 @@
     \hat{H}=&{\color{red}H_\text{core}}+{\color{blue}H_\text{sp}}={\color{red}\sum_{k=1,2,3}\frac{1}{2\mathcal{J}_k}\left(\hat{I}_k-\hat{j}_k\right)^2}+\nonumber\\
             &+{\color{blue}\epsilon_j+\frac{V}{j(j+1)}\left[\cos\gamma\left(3\hat{j}_3^2-j^2\right)-\sqrt{3}\sin\gamma\left(\hat{j}_1^2-\hat{j}_2^2\right)\right]}
   \end{align}}%
-  \par{\tiny\textbf{Solving the Hamiltonian in semi-classical approach for $^{163}Lu$}: \textit{R. Poenaru and A. A. Raduta, IJMPE, 2021}.}
+  % \par{\tiny\textbf{Solving the Hamiltonian in semi-classical approach}}
+  \par{\tiny\textbf{for $^{163}Lu$}: \textit{R Poenaru, AA Raduta, IJMPE, 2021}.}
   \par{\tiny\textbf{For $^{135}Pr$}: \textit{A. A. Raduta and R. Poenaru, Journal of Physics G, 2020}.}
   % \fontsize{0.2cm}{0.2cm}\selectfont sss
 \end{frame}
@@ -322,20 +311,20 @@
   \frametitle{Classical energy}
 \begin{block}{Energy spectrum for odd mass nuclei}
   \begin{itemize}
-    \item Total energy is given in terms of \textbf{two wobbling frequencies} one associated to the {\color{red}core} and one for the {\color{blue}odd-particle}
+    \item Total energy is given in terms of \textbf{two wobbling frequencies}: $\Omega_1\to$ {\color{red}core} $\Omega_2\to$ {\color{blue}odd-particle}
     \item The frequencies represent the harmonic-like behavior of the wobbling motion in odd-$A$ nuclei
   \end{itemize}
 \end{block}
   \begin{exampleblock}{Energy spectrum}
     \begin{align}
-        E_I&={\color{cyan}\epsilon_{j}}+{\color{magenta}\mathcal{H}_\text{min}(I)}+\left[{\color{blue}\Omega_1^I\left(n_{w_1}+\frac{1}{2}\right)}+{\color{red}\Omega_2^I\left(n_{w_2}+\frac{1}{2}\right)}\right]
+        E_I&={\color{cyan}\epsilon_{j}}+{\color{magenta}\mathcal{H}_\text{min}(I)}+{\color{blue}\hbar\Omega_1^I\left(n_{w_1}+\frac{1}{2}\right)}+{\color{red}\hbar\Omega_2^I\left(n_{w_2}+\frac{1}{2}\right)}
       \end{align} 
-      Terms: {\color{cyan}{single particle energy}}, {\color{magenta}energy in the minimum point} and [harmonic-like motion].
+      % Terms: {\color{cyan}{single particle energy}}, {\color{magenta}energy in the minimum point} and [harmonic-like motion].
     \end{exampleblock}
 \end{frame}
 
 \begin{frame}
-  \frametitle{Experimental results for A=163}
+  \frametitle{Results for A=163}
   \begin{exampleblock}{Wobbling Motion in $^{163}$Lu}
     \begin{itemize}
       \item Four wobbling bands TSD1,2,3,4
@@ -345,40 +334,71 @@
   \begin{alertblock}{Model parametrization}
     \begin{itemize}
       \item 5 free parameters: $\mathcal{P}_\text{fit}=\{\mathcal{J}_1,\mathcal{J}_2,\mathcal{J}_3,V,\gamma\}$
-      \item $\gamma_\text{fit}=22^\circ$ $\rightarrow$ agreement with experimental values
-      \item $V_\text{fit}=2.1\text{MeV}$
+      \item $\gamma^\text{fit}=22^\circ$ $\rightarrow$ $\gamma^\text{exp}=20^\circ$
+      \item $V^\text{fit}=2.1\text{MeV}$ (literature: $0<V<8\ \text{MeV}$)
       \item the odd proton $i_{13/2}$ of positive parity couples to the triaxial core and generates TSD1,2,3,4
     \end{itemize}
   \end{alertblock}
-  {\begin{table}
-        \centering
-      \begin{tabular}{lll}
-    $\mathcal{I}_1$ $\left[\hbar^2/\text{MeV}\right]$ & $\mathcal{I}_2$ $\left[\hbar^2/\text{MeV}\right]$ & $\mathcal{I}_3$ $\left[\hbar^2/\text{MeV}\right]$ \\
-    {\color{red}72}              & {\color{red}15}              & {\color{red}7}            \\
-    \end{tabular}
-        \label{parameter_set}
-    \end{table}}
+    \begin{table}
+      \centering
+      \begin{tabular}{|c|c|c|c|}
+      \hline
+      $\mathcal{J}_1^\text{fit}$ & $\mathcal{J}_2^\text{fit}$ & $\mathcal{J}_3^\text{fit}$ & \multirow{2}{*}{$\left[\hbar^2\text{MeV}^{-1}\right]$} \\ \cline{1-3}
+      72                         & 15                         & 7                         &                                                       \\ \hline
+      \end{tabular}
+    \end{table}
+    \tiny{R Poenaru, AA Raduta, IJMPE, 2021}
 \end{frame}
 
 \begin{frame}
-  \frametitle{Experimental Evidence}
+  \frametitle{Results for A=163 II}
   \begin{figure}
     \centering
     \begin{minipage}{.5\textwidth}
       \centering
-      \includegraphics[scale=0.3]{figs/DoubleShift_TSD3.pdf}
-      \includegraphics[scale=0.3]{figs/DoubleShift_TSD3.pdf}
+      \includegraphics[scale=0.3]{figs/DoubleShift_TSD1.pdf}
+      \includegraphics[scale=0.3]{figs/DoubleShift_TSD2.pdf}
     \end{minipage}%
     \begin{minipage}{.5\textwidth}
       \centering
-     \includegraphics[scale=0.3]{figs/DoubleShift_TSD4.pdf}
+     \includegraphics[scale=0.3]{figs/DoubleShift_TSD3.pdf}
      \includegraphics[scale=0.3]{figs/DoubleShift_TSD4.pdf}
     \end{minipage}
     \end{figure}
+    \tiny{\emph{R Poenaru, AA Raduta - Rom. J. of Phys,66 (7-8), 2021}}
 \end{frame}
 
 \begin{frame}
-  \frametitle{Experimental Evidence}
+  \frametitle{Results for A=163 III}
+  \begin{itemize}
+    \item Energy and angular momentum: constants of motion
+    \begin{align}
+      E=&\mathcal{S}_1x_1^2+\mathcal{S}_2x_2^2+\mathcal{S}_3x_3^2+\mathcal{S}_0^\text{core+sp}\ ,\\
+      I^2=&x_1^2+x_2^2+x_3^2\ .
+  \end{align}
+  \end{itemize}
+  \begin{figure}
+    \centering
+      \includegraphics[scale=0.5]{figs/tsd1_spin1.eps}
+      \includegraphics[scale=0.5]{figs/tsd2_spin1.eps}
+    \end{figure}
+    \tiny{\emph{R Poenaru, AA Raduta - Rom. J. of Phys,66 (9-10), 2021}}
+\end{frame}
+
+\begin{frame}
+  \frametitle{Conclusions}
+  \begin{itemize}
+    \item Energy spectrum for even-even nuclei was obtained using a \emph{harmonic approximation}
+    \item Energy spectrum for odd-$A$ nuclei was obtained using \emph{PRM}
+    \item 1 oscillatory motion for even-$A$ $\longrightarrow\ \hbar\omega_\text{wob}$
+    \item 2 oscillatory motions for odd-$A$ $\longrightarrow\ \hbar\Omega_{1,2}$
+    \item odd-$A$: $\gamma$ obtained self-consistently (agreement with exp.)
+    \item geometrical interpretations: consistent with quantal studies (\emph{Lawrie et al. 2020})
+  \end{itemize}
+\end{frame}
+
+\begin{frame}
+  \frametitle{Chart of wobblers}
   \begin{figure}
     \centering
     \begin{minipage}{.5\textwidth}
