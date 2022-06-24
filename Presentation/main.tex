@@ -23,12 +23,12 @@
 \institute[VFU]
 {
   \inst{1}%
-  Dept. of Th. Phys. @ IFIN-HH\\
-  Magurele, Romania
+  Doctoral School of Physics @ UB\\
+  Bucharest, Romania
   \and
   \inst{2}%
-  Doctoral School of Physics\\
-  Bucharest, Romania
+  Dept. of Th. Phys. @ IFIN-HH\\
+  Magurele, Romania
 }
 
 \date{\textit{UB Faculty of Physics Meeting}\\\textit{\today}}
@@ -80,7 +80,7 @@
 \begin{frame}
   \frametitle{Fingerprints for Triaxiality}
   \begin{itemize}
-    \item Experimentally, stable triaxial nuclei represent a real challenge
+    \item Stable triaxial nuclei represent a real challenge
     \item Clear signatures for confirming stable triaxiality in nuclei
     \begin{enumerate}
       \item Chiral symmetry breaking (\textit{Frauendorf, 1997})
@@ -183,18 +183,29 @@
 
 \begin{frame}
   \frametitle{New Results for A=130 II}
-      \begin{alertblock}{Harmonic Approximation}
+  \begin{columns}
+    \begin{column}{0.65\textwidth}
+      % \begin{alertblock}{Harmonic Approximation}
         \begin{itemize}
           \item Employed an energy spectrum of harmonic type according to Eq. \ref{wobbling-hamiltonian-even-A}:
           \begin{align}
-            E_{I,n_w}={\color{red}\frac{\hbar^2}{2\mathcal{J}_3}I(I+1)}+{\color{blue}\hbar\omega_\text{wob}\left(n_w+\frac{1}{2}\right)}
+            E_{I}={\color{red}\frac{\hbar^2}{2\mathcal{J}_3}I(I+1)}+{\color{blue}\hbar\omega_\text{wob}\left(n_w+\frac{1}{2}\right)}\nonumber
           \end{align}
           \item wobbling frequency - linear dependence on $I$ (fixed MOI ordering $\mathcal{J}_3>\mathcal{J}_{1,2}$)
           \begin{align}
-            {\color{blue}\hbar\omega_\text{wob}(I)=2f(\mathcal{J}_1,\mathcal{J}_2,\mathcal{J}_3)\cdot I}
+            {\color{blue}\hbar\omega_\text{wob}(I)=2f(\mathcal{J}_1,\mathcal{J}_2,\mathcal{J}_3)\cdot I}\nonumber
           \end{align}
         \end{itemize}
-      \end{alertblock}
+      % \end{alertblock}
+    \end{column}
+    \begin{column}{0.4\textwidth}
+      \begin{figure}
+        \begin{center}
+          \includegraphics[scale=0.21]{Figs/triaxial-shapes-even-A.pdf}
+        \end{center}
+      \end{figure}
+    \end{column}
+  \end{columns}
 \end{frame}
 
 \begin{frame}
@@ -310,18 +321,19 @@
 
 \begin{frame}
   \frametitle{Classical energy}
-\begin{block}{Energy spectrum for odd mass nuclei}
-  \begin{itemize}
-    \item Total energy is given in terms of \textbf{two wobbling frequencies}: $\Omega_1\to$ {\color{red}core} and $\Omega_2\to$ {\color{blue}odd-particle}
-    \item The frequencies represent the harmonic-like behavior of the wobbling motion in odd-$A$ nuclei
-  \end{itemize}
-\end{block}
-  \begin{exampleblock}{Energy spectrum}
-    \begin{align}
-        E_I&={\color{cyan}\epsilon_{j}}+{\color{magenta}\mathcal{H}_\text{min}(I)}+{\color{blue}\hbar\Omega_1^I\left(n_{w_1}+\frac{1}{2}\right)}+{\color{red}\hbar\Omega_2^I\left(n_{w_2}+\frac{1}{2}\right)}
-      \end{align} 
-      % Terms: {\color{cyan}{single particle energy}}, {\color{magenta}energy in the minimum point} and [harmonic-like motion].
-    \end{exampleblock}
+      \begin{block}{Energy spectrum for odd mass nuclei}
+        \begin{itemize}
+          \item Total energy is given in terms of \textbf{two wobbling frequencies}: $\Omega_1\to$ {\color{red}core} and $\Omega_2\to$ {\color{blue}odd-particle}
+          % \item The frequencies represent the harmonic-like behavior of the wobbling motion in odd-$A$ nuclei
+        \end{itemize}
+        \begin{align}
+          E_I&={\color{black}\epsilon_{j}}+{\color{black}\mathcal{H}_\text{min}(I)}+{\color{red}\hbar\Omega_1^I\left(n_{w_1}+\frac{1}{2}\right)}+{\color{blue}\hbar\Omega_2^I\left(n_{w_2}+\frac{1}{2}\right)}\nonumber
+        \end{align} 
+      \end{block}
+  \begin{figure}
+    \centering
+    \includegraphics[scale=0.23]{Figs/triaxial-shapes-oddA.pdf}
+  \end{figure}
 \end{frame}
 
 \begin{frame}
@@ -409,8 +421,10 @@
       \end{figure}
     \end{minipage}%
     \begin{minipage}{.5\textwidth}
-      \par Wobbling nuclei (up to date)
-      \par \textit{Poenaru, 2022, in progress}
+      \par{\large{Thank you for your attention!}}
+      \vspace*{3cm}
+      \par{\tiny{Wobbling nuclei (up to date)}}
+      \par{\tiny{Poenaru, 2022, in progress}}
     \end{minipage}
     \end{figure}
 \end{frame}
